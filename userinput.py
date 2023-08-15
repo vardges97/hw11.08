@@ -15,12 +15,14 @@ while user_input != my_passwd:
     test = 0
     if user_input == my_passwd:
         print("you win!")
-    elif test == 3:
-        break
-        print("out of guesses")
     elif user_input!= my_passwd:
+        test+=1
         print("incorrect, guess again")
-        test+=1"""
+
+    elif test == 3:
+        print("out of guesses")
+        break ???"""
+
 
 """i=0
 while i<=10:
@@ -29,9 +31,9 @@ while i<=10:
         break
     print(i)
     i +=1"""
-"""
-#gitem sxal e
-list1=[1,2,3,4,5]
+
+
+"""list1=[1,2,3,4,5]
 list2=[3,4,5,6,7]
 
 result = []
@@ -45,8 +47,8 @@ print(result)"""
     for i in range(len(string)):
         if string[i] != ' ':
             list.append(string[i])
-    return toString(list)
-def toString(List):
+    return string(list)
+def string(List):
     return ''.join(List)
 string = " and theyll tell you black is really" \
          " white the moon is just the sun at night" \
@@ -56,7 +58,7 @@ print (removeSpaces(string))"""
 
 """fib = [0,1]
 for i in range(2,11):
-    next = fib[i-1]+fib[i-2]
+    next = fib[i-1]+fib[i-2]  
     fib.append(next)
 print(fib)"""
 
@@ -87,6 +89,30 @@ elif mark < 60 and mark > 40:
     print(" your grade is C")
 elif mark < 40:
     print("your grade is D")"""
+
+"""print("input a,b,c and ill solve a quadratic equation for those numbers")
+a = float(input("input a: "))
+b = float(input("input b: "))
+c = float(input("input c: "))
+
+import math
+
+dis = (b*b) - (4*a*c)
+sqrt_val = math.sqrt(abs(dis))
+
+if a == 0:
+    print("a cant be 0")
+
+elif dis>0:
+    print((-b+sqrt_val)/(2*a))
+    print((-b-sqrt_val) / (2 * a))
+
+elif dis == 0:
+    print(-b/(2*a))
+
+else:
+    print("doesnt have a real solution")"""
+
 
 """vcount = 0;
 ccount = 0;
@@ -124,8 +150,11 @@ for i in range(1,11):
 print(squares)"""
 
 """nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-squares = ['1', '4', '9', '16', '25', '36','49','64','81','100']
+squares = []
+for i in range(1,11):
+    res = (i**2)
+    squares.append(res)
 
 list1 = list(zip(nums, squares))
 print(list1)"""
-# arajin@ chisht dzev@ gli ch@nka vrjin@ chgitem chisht e te voch
+# arajin@ chisht dzev@ glxi ch@nka 
